@@ -10,7 +10,7 @@ Shown are the stock **closing price** and ***volume*** of your stock!
 # https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75
 #define the ticker symbol
 ticker_input = ''
-ticker= st.text_area("Ticker Input", ticker_input, height=25)
+ticker= st.text_area("Enter your ticker symbol:", ticker_input, height=25)
 #get data on this ticker
 ticker_data = yf.Ticker(ticker)
 #get the historical prices for this ticker
